@@ -5,12 +5,12 @@ body{
 
 
 pre{
-        padding-top: 50px;
-        color: #496C6E;
-        font-size: 30px;
-        text-align: center;
-        letter-spacing: 8px;
-        font-weight: bold;
+    padding-top: 50px;
+    color: #496C6E;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: bold;
 }
 
 
@@ -18,11 +18,12 @@ pre{
     background-color: white;
     margin: 60px auto auto auto;
     width: 48%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 20px;
     border-radius: 15px;
     position: relative;
 }
-
 
 
 label{
@@ -47,8 +48,8 @@ label{
     color:#00474b;
     font-weight: bold;
     font-size: 32px;
-
 }
+
 
 input::placeholder {
     font-weight: bold;
@@ -68,18 +69,21 @@ input::placeholder {
     display: inline-block;
 }
 
-.flex-container {
+
+.tip-options{
     display: flex;
     flex-wrap: wrap;
     width: 420px;
     padding-left: 6px;
+    margin-top: -10px;
 }
 
-.flex-container > div {
+
+.tip-options > button {
     margin: 6px;
     padding: 20px;
     font-size: 22px;
-    width: 59px;
+    width: 100px;
     height: 4px;
     border-radius: 5px;
     color: white;
@@ -89,16 +93,21 @@ input::placeholder {
     justify-content: center;
     text-align: center;
     font-weight: bold;
+    border: none;
 }
 
 
-.flex-container > div:last-child{
+.tip-options > button:hover {
+    background-color: #23c0ab;
+    color:#00474b;
+}
+
+
+.tip-options > button:last-child{
     color: #567775;
     font-size: 20px;
     background-color:#f3f8fb;
 }
-
-
 
 
 .people{
@@ -110,12 +119,19 @@ input::placeholder {
 }
 
 
+#people-input{
+    margin-top: -4px;
+    margin-bottom: 25px
+}
+
+
 .input-container {
     position: relative;
     display: flex;
     align-items: center;
     padding-left: 10px;
 }
+
 
 .input-container .icon {
     position: absolute;
@@ -126,12 +142,12 @@ input::placeholder {
     padding: 10px;
     font-weight: bold;
     color: #b1bfc1;
-
 }
+
 
 .input-container i {
     position: absolute;
-    left: 5px;
+    left: 9px;
     font-size: 12px;
     padding: 15px;
     color: #b1bfc1;
@@ -142,9 +158,9 @@ input::placeholder {
     position: absolute;
     display: inline-block;
     left: 380px;
-    top: 10px;
-    right: 10px;
-    bottom: 5px;
+    top: 15px;
+    right: 12px;
+    bottom: 16px;
     background-color: #00474b;
     border-radius: 15px;
     margin: 10px;
@@ -162,6 +178,7 @@ input::placeholder {
 color: #5e898e;
  }
 
+
 .right-container h2 span{
     position: absolute;
     left: 220px;
@@ -171,6 +188,7 @@ color: #5e898e;
     color: #23c0ab;
     font-size: 40px;
 }
+
 
 #tip-amount{
     top: 35px;
@@ -182,7 +200,7 @@ color: #5e898e;
 }
 
 
-button {
+#reset-btn {
     width: 80%;
     padding: 10px;
     border: none;
@@ -193,67 +211,58 @@ button {
     font-weight: 800;
     position: absolute;
     top:280px;
-    left: 30px;
+    left: 35px;
 }
 
 
 @media only screen and (max-width: 600px) {
-    .container {
-        width: 100% ;
-        border-radius: 25px ;
-        margin-left: -10px ;
-        margin-right: -100px;
-        margin-bottom: 2px;
 
+    .container {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
     }
+
 
     .container input {
         width: 90% ;
-        height: 30px ;
+        height: 25px ;
     }
+
 
     .right-container {
         position: relative ;
         width: 95% ;
         height: 260px ;
-        left: 1px ;
+        left: -3px ;
         right: 1px ;
-        top: 15px ;
+        top: 2px ;
         bottom: 15px ;
         margin-bottom: 60px ;
-
-
     }
+
+
     #reset-btn {
-        width: 80%;
-        position: absolute;
         top: 200px;
-        left: 30px;
         cursor: pointer;
         background-color: #23c0ab;
-        font-weight: 700;
+        font-weight: 760;
         color: #00474b;
-
     }
 
 
-    input::placeholder{
-        content: "142.55";
-        padding: 15px;
-        color:#00474b;
-        font-size: 30px;
-
-    }
-
-
-    .flex-container {
+    .tip-options {
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
         gap: 5px;
     }
 
-    .flex-container  div {
+
+    .tip-options  button {
         width: 33%;
         height: 10px;
         display: flex;
@@ -262,21 +271,4 @@ button {
         text-align: center;
         font-weight: bold;
     }
-
-
-    .flex-container > div:nth-child(3) {
-        background-color: #23c0ab;
-        color:#00474b;
-    }
-
-
-
-
-
-
 }
-
-
-
-
-

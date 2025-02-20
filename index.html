@@ -4,45 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Task 1</title>
+    <title>Splitter</title>
     <link rel="stylesheet" href="css/master.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<pre>SPLI
-TTER
-</pre>
+
+<pre>SPLI<br>TTER</pre>
 <div class="container">
     <label for="bill">Bill</label>
     <div class="input-container">
         <span class="icon">$</span>
         <input type="number" id="bill" name="bill" placeholder="0" >
     </div>
+
     <p class="select-tip">Select Tip %</p>
-    <div class="flex-container">
-        <div class="flex-item1">5%</div>
-        <div class="flex-item2">10%</div>
-        <div class="flex-item3">15%</div>
-        <div class="flex-item4">25%</div>
-        <div class="flex-item5">50%</div>
-        <div class="flex-item6">Custom</div>
+    <div class="tip-options">
+        <button class="tip-option1">5%</button>
+        <button class="tip-option2">10%</button>
+        <button class="tip-option3">15%</button>
+        <button class="tip-option4">25%</button>
+        <button class="tip-option5">50%</button>
+        <button class="tip-option6">Custom</button>
     </div>
+
     <label for="people" class="people">Number of People</label>
-    <div class="input-container" style="margin-top: -7px;">
+    <div class="input-container" id="people-input">
         <i class="fa-solid fa-user"></i>
         <input type="number" id="people" name="people"  placeholder="0">
     </div>
+
     <div class="right-container">
       <div class="result">
           <p >Tip Amount <br> <span id="amount-span">/&nbsp; &nbsp;person</span></p>
           <h2><span id="tip-amount">$0.00</span></h2>
       </div>
-        <div>
+        <div class="result">
             <p >Total <br> <span id="total-span">/&nbsp; &nbsp;person</span></p>
             <h2><span id="total" >$0.00</span></h2>
         </div>
         <button id="reset-btn" disabled>RESET</button>
-
     </div>
+
 </div>
 </body>
+</html>

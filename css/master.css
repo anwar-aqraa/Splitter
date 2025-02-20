@@ -1,0 +1,282 @@
+body{
+    background-color: #C5E4E7;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+pre{
+        padding-top: 50px;
+        color: #496C6E;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 8px;
+        font-weight: bold;
+}
+
+
+.container{
+    background-color: white;
+    margin: 60px auto auto auto;
+    width: 48%;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+
+label{
+    display: block;
+    color: #6d797a;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+
+.container  input{
+    background-color: #f3f8fb;
+    border: none;
+    width: 41%;
+    height: 10px;
+    border-radius: 5px;
+    direction:RTL;
+    padding: 15px;
+    color:#00474b;
+    font-weight: bold;
+    font-size: 32px;
+
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: #b1bfc1;
+    padding: 7px;
+    text-align: right;
+    font-size: 24px;
+}
+
+
+.select-tip {
+    color: #6d797a;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    padding-left: 6px;
+}
+
+.flex-container > div {
+    margin: 6px;
+    padding: 20px;
+    font-size: 22px;
+    width: 59px;
+    height: 4px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00474b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.flex-container > div:last-child{
+    color: #567775;
+    font-size: 20px;
+    background-color:#f3f8fb;
+}
+
+
+
+
+.people{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    display: block;
+    color: #6d797a;
+    padding-left: 10px;
+}
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.input-container .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    padding: 10px;
+    font-weight: bold;
+    color: #b1bfc1;
+
+}
+
+.input-container i {
+    position: absolute;
+    left: 5px;
+    font-size: 12px;
+    padding: 15px;
+    color: #b1bfc1;
+}
+
+
+.right-container{
+    position: absolute;
+    display: inline-block;
+    left: 380px;
+    top: 10px;
+    right: 10px;
+    bottom: 5px;
+    background-color: #00474b;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+
+.right-container p{
+    padding-top: 25px;
+    padding-left: 30px;
+    color: white;
+}
+
+
+.right-container span{
+color: #5e898e;
+ }
+
+.right-container h2 span{
+    position: absolute;
+    left: 220px;
+    top: 35px;
+    right: 10px;
+    bottom: 20px;
+    color: #23c0ab;
+    font-size: 40px;
+}
+
+#tip-amount{
+    top: 35px;
+}
+
+
+#total{
+    top: 120px;
+}
+
+
+button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0D686D;
+    color: #045f65;
+    font-size: 16px;
+    font-weight: 800;
+    position: absolute;
+    top:280px;
+    left: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100% ;
+        border-radius: 25px ;
+        margin-left: -10px ;
+        margin-right: -100px;
+        margin-bottom: 2px;
+
+    }
+
+    .container input {
+        width: 90% ;
+        height: 30px ;
+    }
+
+    .right-container {
+        position: relative ;
+        width: 95% ;
+        height: 260px ;
+        left: 1px ;
+        right: 1px ;
+        top: 15px ;
+        bottom: 15px ;
+        margin-bottom: 60px ;
+
+
+    }
+    #reset-btn {
+        width: 80%;
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        cursor: pointer;
+        background-color: #23c0ab;
+        font-weight: 700;
+        color: #00474b;
+
+    }
+
+
+    input::placeholder{
+        content: "142.55";
+        padding: 15px;
+        color:#00474b;
+        font-size: 30px;
+
+    }
+
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 5px;
+    }
+
+    .flex-container  div {
+        width: 33%;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+    .flex-container > div:nth-child(3) {
+        background-color: #23c0ab;
+        color:#00474b;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+

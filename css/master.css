@@ -97,7 +97,7 @@ input::placeholder {
 }
 
 
-.tip-options > button:hover {
+.tip-options > button:active{
     background-color: #23c0ab;
     color:#00474b;
 }
@@ -133,17 +133,6 @@ input::placeholder {
 }
 
 
-.input-container .icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 17px;
-    padding: 10px;
-    font-weight: bold;
-    color: #b1bfc1;
-}
-
 
 .input-container i {
     position: absolute;
@@ -154,7 +143,7 @@ input::placeholder {
 }
 
 
-.right-container{
+.result-container{
     position: absolute;
     display: inline-block;
     left: 380px;
@@ -167,19 +156,19 @@ input::placeholder {
 }
 
 
-.right-container p{
+.result-container p{
     padding-top: 25px;
     padding-left: 30px;
     color: white;
 }
 
 
-.right-container span{
+.result-container span{
 color: #5e898e;
  }
 
 
-.right-container h2 span{
+.result-container h2 span{
     position: absolute;
     left: 220px;
     top: 35px;
@@ -215,6 +204,16 @@ color: #5e898e;
 }
 
 
+
+#reset-btn:hover {
+    cursor: pointer;
+    background-color: #23c0ab;
+    font-weight: 760;
+    color: #00474b;
+}
+
+
+
 @media only screen and (max-width: 600px) {
 
     .container {
@@ -233,7 +232,7 @@ color: #5e898e;
     }
 
 
-    .right-container {
+    .result-container {
         position: relative ;
         width: 95% ;
         height: 260px ;

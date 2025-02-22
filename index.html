@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Splitter</title>
-    <link rel="stylesheet" href="css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
 
 <pre>SPLI<br>TTER</pre>
+
 <div class="container">
     <label for="bill">Bill</label>
     <div class="input-container">
-        <span class="icon">$</span>
+        <i class="fa-solid fa-dollar-sign"></i>
         <input type="number" id="bill" name="bill" placeholder="0" >
     </div>
 
@@ -34,7 +35,7 @@
         <input type="number" id="people" name="people"  placeholder="0">
     </div>
 
-    <div class="right-container">
+    <div class="result-container">
       <div class="result">
           <p >Tip Amount <br> <span id="amount-span">/&nbsp; &nbsp;person</span></p>
           <h2><span id="tip-amount">$0.00</span></h2>

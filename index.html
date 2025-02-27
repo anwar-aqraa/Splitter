@@ -12,32 +12,35 @@
 
 <pre>SPLI<br>TTER</pre>
 
-<div class="container">
-    <label for="bill">Bill</label>
-    <div class="input-container">
-        <i class="fa-solid fa-dollar-sign"></i>
-        <input type="number" id="bill" name="bill" placeholder="0" >
+  <div class="container">
+     <div class="left-side">
+        <label for="bill">Bill</label>
+        <div class="input-container">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <input type="number" id="bill" name="bill" placeholder="0" >
+        </div>
+
+        <p class="select-tip">Select Tip %</p>
+        <div class="tip-options">
+            <button class="tip-option1">5%</button>
+            <button class="tip-option2">10%</button>
+            <button class="tip-option3">15%</button>
+            <button class="tip-option4">25%</button>
+            <button class="tip-option5">50%</button>
+            <button class="tip-option6">Custom</button>
+        </div>
+
+        <label for="people" class="people">Number of People</label>
+        <div class="input-container" id="people-input">
+            <i class="fa-solid fa-user"></i>
+            <input type="number" id="people" name="people"  placeholder="0">
+        </div>
     </div>
 
-    <p class="select-tip">Select Tip %</p>
-    <div class="tip-options">
-        <button class="tip-option1">5%</button>
-        <button class="tip-option2">10%</button>
-        <button class="tip-option3">15%</button>
-        <button class="tip-option4">25%</button>
-        <button class="tip-option5">50%</button>
-        <button class="tip-option6">Custom</button>
-    </div>
 
-    <label for="people" class="people">Number of People</label>
-    <div class="input-container" id="people-input">
-        <i class="fa-solid fa-user"></i>
-        <input type="number" id="people" name="people"  placeholder="0">
-    </div>
-
-    <div class="result-container">
+    <div class="right-side">
       <div class="result">
-          <p >Tip Amount <br> <span id="amount-span">/&nbsp; &nbsp;person</span></p>
+          <p >Tip Amount <br> <span id="amount-span">/&nbsp; &nbsp;person</span> </p>
           <h2><span id="tip-amount">$0.00</span></h2>
       </div>
         <div class="result">
@@ -46,7 +49,7 @@
         </div>
         <button id="reset-btn" disabled>RESET</button>
     </div>
+  </div>
 
-</div>
 </body>
 </html>

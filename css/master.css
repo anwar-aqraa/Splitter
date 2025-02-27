@@ -13,16 +13,22 @@ pre{
     font-weight: bold;
 }
 
-
 .container{
+    display: flex;
+    justify-content: space-between;
     background-color: white;
-    margin: 60px auto auto auto;
-    width: 48%;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    padding-left: 20px;
+    margin: 60px auto auto;
+    width: 50%;
+    padding: 20px 0 20px 25px;
     border-radius: 15px;
-    position: relative;
+}
+
+.left-side{
+    flex: 1.5;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    background-color: white;
 }
 
 
@@ -40,7 +46,7 @@ label{
 .container  input{
     background-color: #f3f8fb;
     border: none;
-    width: 41%;
+    width: 91%;
     height: 10px;
     border-radius: 5px;
     direction:RTL;
@@ -66,25 +72,26 @@ input::placeholder {
     font-size: 17px;
     padding-top: 10px;
     padding-left: 10px;
-    display: inline-block;
 }
 
 
 .tip-options{
-    display: flex;
-    flex-wrap: wrap;
-    width: 420px;
-    padding-left: 6px;
+    display: grid;
+    margin-top: -10px;
+}
+
+.tip-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
     margin-top: -10px;
 }
 
 
 .tip-options > button {
-    margin: 6px;
+    height: 4px;
     padding: 20px;
     font-size: 22px;
-    width: 100px;
-    height: 4px;
     border-radius: 5px;
     color: white;
     background-color: #00474b;
@@ -94,7 +101,9 @@ input::placeholder {
     text-align: center;
     font-weight: bold;
     border: none;
+
 }
+
 
 
 .tip-options > button:active{
@@ -139,53 +148,39 @@ input::placeholder {
 }
 
 
-.result-container{
-    position: absolute;
-    display: inline-block;
-    left: 380px;
-    top: 15px;
-    right: 12px;
-    bottom: 16px;
+.right-side{
+    flex: 1.5;
     background-color: #00474b;
     border-radius: 15px;
-    margin: 10px;
+    margin: 25px;
 }
 
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 0;
+}
 
-.result-container p{
-    padding-top: 25px;
-    padding-left: 30px;
+.result p {
+    margin: 0;
     color: white;
 }
 
 
-.result-container span{
-color: #5e898e;
- }
-
-
-.result-container h2 span{
-    position: absolute;
-    left: 220px;
-    top: 35px;
-    right: 10px;
-    bottom: 20px;
+.result h2 span{
     color: #23c0ab;
     font-size: 40px;
+ }
+
+.result span{
+    color: #5e898e;
 }
 
-
-#tip-amount{
-    top: 35px;
-}
-
-
-#total{
-    top: 120px;
-}
 
 
 #reset-btn {
+    display: block;
     width: 80%;
     padding: 10px;
     border: none;
@@ -193,77 +188,49 @@ color: #5e898e;
     background-color: #0D686D;
     color: #045f65;
     font-size: 16px;
-    font-weight: 800;
-    position: absolute;
-    top:280px;
-    left: 35px;
+    font-weight: 760;
+    text-align: center;
+    margin: 96px auto 25px;
 }
 
 
 
 #reset-btn:active {
     background-color: #23c0ab;
-    font-weight: 760;
     color: #00474b;
 }
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
     .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
         width: 100vw;
         height: auto;
         margin: 0;
-        padding: 20px;
-        border-radius: 20px;
-        box-sizing: border-box;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        margin: 0;
     }
 
 
-    .container input {
-        width: 90%;
-        height: 10px;
+    .result {
+        padding: 11px 20px 0;
     }
-
-
-
-    .result-container {
-        position: relative;
-        width: 95%;
-        height: 260px;
-        left: -3px;
-        right: 1px;
-        top: 2px;
-        bottom: 15px;
-        margin-bottom: 60px;
-    }
-
 
     #reset-btn {
-        top: 200px;
-        cursor: pointer;
-        background-color: #23c0ab;
-        font-weight: 760;
-        color: #00474b;
+        margin: 11px auto 25px;
+    }
+
+    .tip-options > button {
+        width: 130px;
     }
 
 
-    .tip-options {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-        gap: 5px;
-    }
-
-
-    .tip-options  button {
-        width: 33%;
-        height: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-weight: bold;
-    }
 }

@@ -13,6 +13,7 @@ pre{
     font-weight: bold;
 }
 
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -23,12 +24,9 @@ pre{
     border-radius: 15px;
 }
 
+
 .left-side{
     flex: 1.5;
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    background-color: white;
 }
 
 
@@ -37,9 +35,7 @@ label{
     color: #6d797a;
     font-weight: bold;
     font-size: 17px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+    padding: 10px 0 5px 10px;
 }
 
 
@@ -49,7 +45,7 @@ label{
     width: 91%;
     height: 10px;
     border-radius: 5px;
-    direction:RTL;
+    direction:rtl;
     padding: 15px;
     color:#00474b;
     font-weight: bold;
@@ -70,13 +66,11 @@ input::placeholder {
     color: #6d797a;
     font-weight: bold;
     font-size: 17px;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px 0;
 }
 
 
 .tip-options{
-    display: grid;
     margin-top: -10px;
 }
 
@@ -85,8 +79,8 @@ input::placeholder {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
     margin-top: -10px;
+    padding-left: 9px;
 }
-
 
 .tip-options > button {
     height: 4px;
@@ -101,16 +95,12 @@ input::placeholder {
     text-align: center;
     font-weight: bold;
     border: none;
-
 }
-
-
 
 .tip-options > button:active{
     background-color: #23c0ab;
     color:#00474b;
 }
-
 
 .tip-options > button:last-child{
     color: #567775;
@@ -125,7 +115,6 @@ input::placeholder {
     padding-left: 10px;
 }
 
-
 #people-input{
     margin-top: -4px;
     margin-bottom: 25px
@@ -136,8 +125,6 @@ input::placeholder {
     position: relative;
     padding-left: 10px;
 }
-
-
 
 .input-container i {
     position: absolute;
@@ -155,18 +142,17 @@ input::placeholder {
     margin: 25px;
 }
 
+
 .result {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px 0;
+    padding: 10px 40px;
 }
 
 .result p {
-    margin: 0;
     color: white;
 }
-
 
 .result h2 span{
     color: #23c0ab;
@@ -176,7 +162,6 @@ input::placeholder {
 .result span{
     color: #5e898e;
 }
-
 
 
 #reset-btn {
@@ -193,13 +178,10 @@ input::placeholder {
     margin: 96px auto 25px;
 }
 
-
-
 #reset-btn:active {
     background-color: #23c0ab;
     color: #00474b;
 }
-
 
 
 @media only screen and (max-width: 500px) {
@@ -210,15 +192,12 @@ input::placeholder {
         padding: 20px;
         width: 100vw;
         height: auto;
-        margin: 0;
     }
 
     .left-side,
     .right-side {
         width: 100%;
-        margin: 0;
     }
-
 
     .result {
         padding: 11px 20px 0;
@@ -231,6 +210,4 @@ input::placeholder {
     .tip-options > button {
         width: 130px;
     }
-
-
 }

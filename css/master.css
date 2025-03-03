@@ -187,16 +187,12 @@ input::placeholder {
 @media only screen and (max-width: 500px) {
 
     .container {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         padding: 20px;
         width: 100vw;
         height: auto;
-    }
-
-    .left-side,
-    .right-side {
-        width: 100%;
     }
 
     .result {

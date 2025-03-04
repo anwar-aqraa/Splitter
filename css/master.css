@@ -182,7 +182,15 @@ input::placeholder {
 }
 
 
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 992px){
+    .container{
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
 
     .container {
         flex-direction: column;

@@ -66,7 +66,7 @@ input::placeholder {
     color: #6d797a;
     font-weight: bold;
     font-size: 17px;
-    padding: 10px 0;
+    padding: 10px 0 5px 10px;
 }
 
 
@@ -122,7 +122,7 @@ input::placeholder {
     font-weight: bold;
     font-size: 22px;
     border-radius: 5px;
-    padding: 0 15px;
+    padding: 0 14px;
     background-color: white;
 }
 
@@ -134,7 +134,7 @@ input::placeholder {
 }
 
 .people{
-    padding: 25px 0 10px 10px;
+    padding: 20px 0 10px 10px;
 }
 
 #people-input{
@@ -145,7 +145,6 @@ input::placeholder {
 
 .input-container {
     position: relative;
-    padding-left: 10px;
 }
 
 .input-container i {

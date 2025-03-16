@@ -66,13 +66,10 @@ input::placeholder {
     color: #6d797a;
     font-weight: bold;
     font-size: 17px;
-    padding: 10px 0 5px 10px;
+    padding: 15px 0 5px 10px;
 }
 
 
-.tip-options{
-    margin-top: -10px;
-}
 
 .tip-options {
     display: grid;
@@ -114,6 +111,7 @@ input::placeholder {
     border: 1px solid #00474b;
     border-radius: 5px;
     background-color: #f3f8fb;
+    display: none;
 }
 
 #custom-tip-container input {
@@ -134,7 +132,7 @@ input::placeholder {
 }
 
 .people{
-    padding: 20px 0 10px 10px;
+    padding: 15px 0 10px 10px;
 }
 
 #people-input{
@@ -153,6 +151,12 @@ input::placeholder {
     font-size: 12px;
     padding: 15px;
     color: #b1bfc1;
+}
+
+
+#bill-error, #custom-tip-error, #people-error {
+    color: red;
+    display: none;
 }
 
 

@@ -8,11 +8,35 @@ const resetBtn = document.getElementById('reset-btn');
 let billValue = 0;
 let tipValue = 0;
 let peopleValue = 0;
-let isCustomTip = false;
 
 const customTipBtn = document.getElementById('custom-tip-btn');
 const customTipContainer = document.getElementById('custom-tip-container');
 const customTipInput = document.getElementById('custom-tip');
+
+
+function validateInput(inputId, errorId, maxValue = null) {
+    const input = document.getElementById(inputId);
+    const errorMessage = document.getElementById(errorId);
+
+    input.addEventListener('input', () => {
+        if (input.value < 0) {
+            errorMessage.textContent = 'Negative values are not allowed!';
+            errorMessage.style.display = 'block';
+            input.value = '';
+        } else if (maxValue !== null && input.value > maxValue) {
+            errorMessage.textContent = `Value cannot exceed ${maxValue}!`;
+            errorMessage.style.display = 'block';
+            input.value = '';
+        } else {
+            errorMessage.style.display = 'none';
+        }
+    });
+}
+
+validateInput('bill', 'bill-error');
+validateInput('custom-tip', 'custom-tip-error', 100);
+validateInput('people', 'people-error');
+
 
 billInput.addEventListener('input', (e) => {
     billValue = parseFloat(e.target.value) || 0;
@@ -23,27 +47,23 @@ tipButtons.forEach(button => {
     button.addEventListener('click', () => {
         const tipText = button.textContent;
         tipValue = parseFloat(tipText) / 100 || 0;
-        isCustomTip = false;
         customTipContainer.style.display = 'none';
         customTipInput.value = '';
         checkAndCalculate();
     });
 });
 
-customTipBtn.addEventListener('click', () => {
-    customTipContainer.style.display = customTipContainer.style.display === 'none' ? 'block' : 'none';
 
-    if (customTipContainer.style.display === 'none') {
-        customTipInput.value = '';
-    }
+customTipBtn.addEventListener('click', () => {
+    document.getElementById('custom-tip-container').style.display = 'block';
 });
 
 customTipInput.addEventListener('input', () => {
     let customTipValue = parseFloat(customTipInput.value) || 0;
     tipValue = customTipValue / 100;
-    isCustomTip = true;
     checkAndCalculate();
 });
+
 
 peopleInput.addEventListener('input', (e) => {
     const value = parseInt(e.target.value);
@@ -64,7 +84,7 @@ function checkAndCalculate() {
     }
 }
 
-resetBtn.addEventListener('click', (e) => {
+resetBtn.addEventListener('click', () => {
     billInput.value = '';
     peopleInput.value = '';
 

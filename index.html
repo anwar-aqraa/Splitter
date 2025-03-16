@@ -18,8 +18,9 @@
             <label for="bill">Bill</label>
             <div class="input-container">
                 <i class="fa-solid fa-dollar-sign"></i>
-                <input type="number" id="bill" name="bill" placeholder="0" >
+                <input type="number" id="bill" name="bill" placeholder="0" min="0" >
             </div>
+            <p id="bill-error">Negative values are not allowed!</p>
         </div>
         <div class="tips">
             <p class="select-tip">Select Tip %</p>
@@ -31,17 +32,19 @@
                 <button>50%</button>
                 <button id="custom-tip-btn">Custom</button>
             </div>
-            <div id="custom-tip-container" style="display: none;">
+            <div id="custom-tip-container">
                 <label for="custom-tip">Enter Custom Tip %</label>
-                <input type="number" id="custom-tip" placeholder="Enter tip %" />
+                <input type="number" id="custom-tip" placeholder="Enter tip %" min="0" max="100" />
+                <p id="custom-tip-error">Negative values are not allowed!</p>
             </div>
         </div>
         <div class="people">
             <label for="people" class="people">Number of People</label>
             <div class="input-container" id="people-input">
                 <i class="fa-solid fa-user"></i>
-                <input type="number" id="people" name="people"  placeholder="0">
+                <input type="number" id="people" name="people"  placeholder="0" min="0">
             </div>
+            <p id="people-error">Negative values are not allowed!</p>
         </div>
     </div>
 

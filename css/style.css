@@ -69,7 +69,9 @@ input::placeholder {
     padding: 15px 0 5px 10px;
 }
 
-
+button:hover{
+    cursor: pointer;
+}
 
 .tip-options {
     display: grid;
@@ -97,10 +99,6 @@ input::placeholder {
 .tip-options > button:active{
     background-color: #23c0ab;
     color:#00474b;
-}
-
-.tip-options > button:hover{
-    cursor: pointer;
 }
 
 .tip-options > button:last-child{
@@ -210,10 +208,6 @@ input::placeholder {
 #reset-btn:active {
     background-color: #23c0ab;
     color: #00474b;
-}
-
-#reset-btn:hover {
-    cursor: pointer;
 }
 
 

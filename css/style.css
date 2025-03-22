@@ -99,6 +99,10 @@ input::placeholder {
     color:#00474b;
 }
 
+.tip-options > button:hover{
+    cursor: pointer;
+}
+
 .tip-options > button:last-child{
     color: #567775;
     font-size: 20px;
@@ -206,6 +210,10 @@ input::placeholder {
 #reset-btn:active {
     background-color: #23c0ab;
     color: #00474b;
+}
+
+#reset-btn:hover {
+    cursor: pointer;
 }
 
 
